@@ -1,11 +1,40 @@
-@media screen and (max-width: 1440px) {
+/*@media screen and (max-width: 1440px) {
     p
     {
         flex-direction: column;
     }
-}
+}*/
 
 @media screen and (max-width: 440px) {
+    header {
+        display: flex;
+        padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFEFD5;
+        z-index: 10;
+        font-size: 14px;
+        border: 2px solid;
+    }
+
+    .nav-menu a {
+        display: flex;
+        color: beige;
+        gap : 15px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .theme-button {
+        color: antiquewhite;
+        border: black 1px solid;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+
+
     image
     {
         flex-direction: column;

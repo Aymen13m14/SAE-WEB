@@ -1,5 +1,58 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .light-theme
 {
     background-color: white;
     color: black;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #FFEFD5;
+    border: 2px solid;
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+    header {
+        display: flex;
+        padding: 15px 20px;
+        justify-content: right;
+        align-items: center;
+        background-color: aqua;
+        z-index: 10;
+        font-size: 14px;
+        border: 2px solid;
+    }
+
+    #nav-menu a{
+        display: flex;
+        gap : 15px;
+        position: relative;
+    }
+
+    .change-theme {
+        color: antiquewhite;
+        background: beige;
+        border: black 1px solid;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+
 }
