@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>Triply : Explorez. Rêvez. Voyagez</title>
-             
+    <link id="themelink" href="css/sombre.css" rel="stylesheet">    
   </head>
-
-
-
   <body> 
+    <header>
+        <a href="index.html" >Page-d'accueil</a>
+        <a href="html/espagne.html" >Espagne</a>
+        <a href="html/maroc.html" >Maroc</a>
+        </header>
+
+        <button id="themeselector" class="light-theme" type="button">changer de thème</button>
         <h1> Nos conseils pour un bon séjour !  </h1>
         <h5> Japon, Espagne, Maroc</h5>
     
 
 
         <h3>Tokyo</h3>
-        <img alt="C'est une photo de Tokyo" src="ex0002_1_Tokyo_tower_day.jpg" />
+       <!-- <img alt="C'est une photo de Tokyo" src="ex0002_1_Tokyo_tower_day.jpg" /> --> 
+        <img src="ex0002_1_Tokyo_tower_day.jpg" alt="C'est une photo de Tokyo" sizes="250-350" srcset="ex0002_1_Tokyo_tower_day.jpg">
         <h4> Le Japon est l’un des pays les plus touristiques au monde. 
         Il est réputé pour sa diversité de paysages mais aussi pour sa culture et son histoire riche.
         Pour les villes du moment au Japon, nous vous avons sélectionné les plus originales et les plus populaires : 
@@ -31,7 +36,14 @@
          Celle-ci offre une vue magnifique de nuit sur la métropole de la capitale de l’Est. </h4>
 
 
-        <h3>Osaka</h3>
+        <h3>Osaka</h3>.tiledBackground {
+  background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+  background-size: 150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  color: pink;
+}
         <img alt="C'est une pne photo d'Osaka" src="osaka.jpg" />
         <h4>Osaka est la 3eme plus grande ville du Japon. Osaka est réputée
         pour sa cuisine, comme les Takoyaki, les Okonomiyaki, les Kushikatsu
@@ -77,4 +89,6 @@
 
             
         <h6> Triply</h6>
+        <script src="js/index.js"></script>
+  </body>
 </html>
