@@ -1,13 +1,25 @@
-document.querySelector('#themeselector').addEventListener('click', () => {
-    let themelink = document.querySelector('#themelink');
-    let currentTheme = themelink.getAttribute('href');
 
-    let newTheme = '';
+document.getElementById('themeselector').addEventListener('click', () => {
+    
+    
+    let themeLink = document.getElementById('themelink');
+    let imageLogo = document.getElementById("Triply_dark"); 
+    let currentTheme = themeLink.getAttribute('href');
+
+  
     if (currentTheme.includes('sombre')) {
-        newTheme = currentTheme.replace('sombre', 'claire');
-    } else {
-        newTheme = currentTheme.replace('claire', 'sombre');
-    }
+       
+        themeLink.href = '../css/claire.css'; 
+        
+      
+        imageLogo.src = '../image/Triply.png';
 
-    themelink.setAttribute('href', newTheme);
+    } else {
+        
+        themeLink.href = '../css/sombre.css';
+        
+      
+        imageLogo.src = '../image/Triply_dark.png'; 
+    }
 });
+
