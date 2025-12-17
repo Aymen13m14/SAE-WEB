@@ -137,3 +137,70 @@ header a:hover {
     left: 0;
     font-weight: bold;
 }
+/* Nom du site en footer*/
+h6 {
+  text-align: center;
+  padding: 25px;
+  background-color: #333;
+  color: white;
+  font-size: 1.1em;
+  margin-top: 80px;
+  font-weight: 400;
+}
+
+/* --- SECTION HERO (Grande image de fond) --- */
+.hero {
+    height: 60vh; /* Ajuste la hauteur (60% de l'écran) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%; /* Aligne le texte à gauche comme sur l'image */
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* --- BARRE DE RECHERCHE --- */
+.search-bar {
+    display: flex;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #FFB74D; /* Orange comme sur l'image */
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3;
+}
+
+.search-bar button:hover {
+    background-color: #ffa726;
+}
