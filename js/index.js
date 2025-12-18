@@ -1,62 +1,69 @@
-
+/* =========================================
+   GESTION DU THÈME (CLAIR / SOMBRE)
+   ========================================= */
 document.getElementById('themeselector').addEventListener('click', () => {
-    
-    
     let themeLink = document.getElementById('themelink');
-    let imageLogo = document.getElementById("Triply_dark"); 
     let currentTheme = themeLink.getAttribute('href');
+    
+    // Détection : est-on dans un sous-dossier (html/) ou à la racine ?
+    // Si on est dans un sous-dossier, on remonte d'un cran (../css/)
+    // Sinon, on va direct dans (css/)
+    let cssPrefix = window.location.pathname.includes('html/') ? '../css/' : 'css/';
 
-  
     if (currentTheme.includes('sombre')) {
-       
-        themeLink.href = '../css/claire.css'; 
-        
-      
-       
-
+        // On utilise la variable cssPrefix pour avoir le bon chemin
+        themeLink.href = cssPrefix + 'claire.css'; 
+        // Changement du texte du bouton (optionnel mais sympa)
+        document.getElementById('themeselector').textContent = "Passer en mode sombre";
     } else {
-        
-        themeLink.href = '../css/sombre.css';
-        
-      
-        
+        themeLink.href = cssPrefix + 'sombre.css';
+        document.getElementById('themeselector').textContent = "Passer en mode clair";
     }
 });
 
-// 1. On sélectionne les éléments HTML
+/* =========================================
+   GESTION DE LA BARRE DE RECHERCHE
+   ========================================= */
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
 
-// 2. La fonction qui fait la redirection
 function effectuerRecherche() {
-    // On récupère la valeur et on la met en minuscules (pour éviter les erreurs de majuscules)
     const destination = searchInput.value.toLowerCase().trim();
 
-    // 3. Les conditions de redirection
-    // Si l'utilisateur tape "japon", "tokyo", "osaka" ou "okinawa"
+    // Calcul du chemin pour les liens HTML
+    // Si on est déjà dans le dossier "html/", on écrit juste "japon.html"
+    // Si on est à l'accueil, on écrit "html/japon.html"
+    let htmlPrefix = window.location.pathname.includes('html/') ? '' : 'html/';
+
+    // --- CONDITIONS ---
+
+    // 1. JAPON
     if (destination.includes('japon') || destination.includes('tokyo') || destination.includes('osaka') || destination.includes('okinawa')) {
-        window.location.href = 'html/japon.html';
+        window.location.href = htmlPrefix + 'japon.html';
     } 
-    // Si l'utilisateur tape "espagne", "madrid", "barcelone" ou "séville"
+    // 2. ESPAGNE
     else if (destination.includes('espagne') || destination.includes('madrid') || destination.includes('barcelone') || destination.includes('séville') || destination.includes('seville')) {
-        window.location.href = 'html/espagne.html';
+        window.location.href = htmlPrefix + 'espagne.html';
     } 
-    // Si l'utilisateur tape "maroc", "fès", "casablanca" ou "chefchaouen"
+    // 3. MAROC
     else if (destination.includes('maroc') || destination.includes('fès') || destination.includes('fes') || destination.includes('casablanca')) {
-        window.location.href = 'html/maroc.html';
+        window.location.href = htmlPrefix + 'maroc.html';
     } 
-    // Si on ne reconnait pas la destination
+    // 4. INCONNU
     else {
         alert("Désolé, nous n'avons pas encore cette destination en catalogue (essayez Japon, Espagne ou Maroc) !");
     }
 }
 
-// 4. On déclenche la recherche quand on clique sur le bouton
-searchBtn.addEventListener('click', effectuerRecherche);
+// Déclencheurs (Click + Entrée)
+if(searchBtn) {
+    searchBtn.addEventListener('click', effectuerRecherche);
+}
 
-// 5. On déclenche AUSSI la recherche quand on appuie sur la touche "Entrée"
-searchInput.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        effectuerRecherche();
-    }
-});
+if(searchInput) {
+    searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            effectuerRecherche();
+        }
+    });
+}
