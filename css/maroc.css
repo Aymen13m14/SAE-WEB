@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   font-family: 'Arial', sans-serif;
   line-height: 1.5;
 }
 
 /* Header */
-header {
+header 
+{
   background-color: #fdfaf5;
   padding: 15px 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -20,7 +22,8 @@ header {
 }
 
 /* Logo */
-.logo {
+.logo 
+{
   width: 45px;
   height: 45px;
   margin: 0;
