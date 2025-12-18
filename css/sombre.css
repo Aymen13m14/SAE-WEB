@@ -4,12 +4,12 @@ body
     color: rgb(194, 194, 194);
 
 
-
+}
 /* --- AJOUT POUR LE FOOTER (TRIPLY) --- */
 h6 {
     /* On change la couleur de fond pour qu'elle aille avec le thème sombre */
     /* Soit transparent, soit une couleur très sombre */
-    background-color: rgb(25, 25, 25); 
+    background-color: rgb(40, 40, 40); 
     
     /* On s'assure que le texte reste lisible */
     color: rgb(194, 194, 194);
@@ -17,4 +17,25 @@ h6 {
     /* Optionnel : Une petite bordure pour séparer du reste */
     border-top: 1px solid rgb(80, 80, 80);
 }
+
+/* FORCE LE HEADER SOMBRE */
+header {
+    background-color: rgb(40, 40, 40) !important;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+/* FORCE LES LIENS EN BLANC */
+header a {
+    color: rgb(220, 220, 220) !important;
+}
+
+header a:hover {
+    color: #ffe38f !important;
+}
+
+/* FORCE LE BOUTON À RESTER LISIBLE */
+#themeselector {
+    background-color: #ffe38b !important;
+    color: #333 !important;
 }

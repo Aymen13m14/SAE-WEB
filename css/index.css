@@ -7,7 +7,7 @@ body {
 
 /* Header */
 header {
-  background-color: #fff;
+  background-color: rgb(250, 250, 250);
   padding: 15px 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
@@ -69,7 +69,7 @@ header a:hover {
     
 }
 
-/* --- LES CARTES (Les boîtes vertes) --- */
+/* LES CARTES */
 .card {
     /* C'EST ICI LA CLÉ : */
     width: 30%; /* Chaque carte ne prend que 30% de la place (30+30+30 = 90%, il reste 10% pour les trous) */
@@ -90,6 +90,11 @@ header a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 
 .card h3 {
@@ -203,4 +208,41 @@ h6 {
 
 .search-bar button:hover {
     background-color: #ffa726;
+}
+/* --- VERSION MOBILE --- */
+@media (max-width: 768x) {
+    
+    .hero {
+        /* 1. On réduit la hauteur (passe de 60% à 40% ou 50% de l'écran) */
+        height: 50vh; 
+        
+        /* 2. Optionnel : Si l'image est mal centrée, changez 'center' par 'center top' */
+        background-position: center; 
+    }
+
+    /* On réduit aussi la taille du gros titre pour qu'il ne mange pas toute l'image */
+    .hero-content h1 {
+        font-size: 2rem; /* Plus petit que les 3rem de l'ordi */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Ajustement de la barre de recherche sur mobile pour qu'elle ne dépasse pas */
+    .search-bar {
+        width: 90%; /* Prend presque toute la largeur disponible */
+        flex-direction: column; /* Met le bouton sous le texte si l'écran est trop petit */
+        padding: 5px;
+    }
+
+    .search-bar input {
+        width: 100%; /* L'input prend toute la largeur */
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .search-bar button {
+        width: 100%; /* Le bouton prend toute la largeur */
+    }
 }
