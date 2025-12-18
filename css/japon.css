@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Très important pour le mobile */
+  box-sizing: border-box;
 }
 
 body {
@@ -10,30 +10,38 @@ body {
   line-height: 1.6;
 }
 
-/* --- HEADER RESPONSIVE --- */
+/* Header */
 header {
-  background-color: #fdfaf5;
-  padding: 15px 20px; /* Moins de padding sur les côtés */
+  background-color: rgb(250, 250, 250);
+  padding: 15px 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
-  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'écran est petit */
-  gap: 20px;
+  gap: 40px;
   align-items: center;
-  }
-  
-  
+}
 
+/* Logo */
 .logo {
   width: 45px;
   height: 45px;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 header a {
   text-decoration: none;
   color: #333;
+  font-weight: 400;
   font-size: 0.95em;
+  transition: color 0.3s;
 }
 
+header a:hover {
+  color: #ffe38f;
+}
+
+/* Bouton de thème */
 #themeselector {
   margin-left: auto;
   padding: 8px 18px;
@@ -47,83 +55,165 @@ header a {
   transition: background-color 0.3s;
 }
 
+#themeselector:hover {
+  background-color: #ffe38b;
+}
 
-
-/* --- TITRES --- */
+/* Titres principaux */
 h1 {
   text-align: center;
-  font-size: 1.8em; /* Un peu plus petit pour éviter que ça coupe */
-  margin: 30px 10px;
+  font-size: 2.2em;
+  margin: 50px 0 10px;
+  font-weight: 600;
 }
 
-h5, h2, h3 {
-  text-align: center; /* Centrer les titres des villes rend mieux sur mobile */
+h5 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 60px;
+  font-weight: 400;
 }
 
+/* Titre "Villes du Japon" en jaune clair */
 h2 {
   color: #ffe38b;
   font-size: 2em;
-  margin-bottom: 30px;
+  margin: 0 50px 40px;
+  font-weight: 600;
 }
 
+
+
+/* Sections des villes */
 h3 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 1.8em;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 50px 20px;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
-/* --- IMAGES RESPONSIVE  --- */
 img 
 {
-  width: 750px;
-  height: 750px;
-  border-radius: 15px;
+  width: 1000;
+  height: 500px;
 }
-/* --- MISE EN PAGE VILLES --- */
+
+/* Container pour image + texte côte à côte */
 .city-content {
-  display: flex;
-  flex-direction: row; /* Côte à côte sur PC */
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 400px 1fr;
   gap: 30px;
-  margin: 0 auto 60px; /* Centré horizontalement */
-  max-width: 1200px;   /* Largeur max du contenu */
-  padding: 0 20px;     /* Marge intérieure de sécurité sur mobile */
+  margin: 0 50px 60px;
+  align-items: start;
 }
 
-/* Style du texte à droite de l'image */
-.text-description {
-  flex: 1; /* Prend l'espace restant */
-  font-size: 1rem;
-  text-align: justify;
-}
-
+/* Images - à gauche, taille fixe */
 .city-content img {
-  width: 50%; /* Sur PC, l'image prend la moitié */
+  width: 400px;
+  height: 300px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0;
 }
-/*version mobile*/
-@media screen and (max-width: 768px) {
-  
-  /* On passe votre grid en 1 seule colonne */
+
+/* Textes descriptifs - à droite */
+.city-content h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  color: #333;
+}
+
+/* Footer */
+h6 {
+  text-align: center;
+  padding: 25px;
+  background-color: #333;
+  color: white;
+  font-size: 1.1em;
+  margin-top: 80px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
   .city-content {
-    grid-template-columns: 1fr; /* Au lieu de 400px 1fr */
-    margin: 0 20px 40px; /* Marges adaptées au mobile */
-    display: flex;       /* Plus sûr sur mobile */
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  
+  .city-content img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #themeselector {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+  
+  h5 {
+    padding: 0 20px;
+  }
+  
+  h2 {
+    margin: 0 20px 30px;
+    font-size: 1.7em;
+  }
+  
+  h3 {
+    margin: 0 20px 20px;
+    font-size: 1.3em;
+  }
+  
+  .city-content {
+    margin: 0 20px 40px;
+  }
+  
+  .city-content h4 {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  header a {
+    font-size: 0.85em;
   }
 
-  /* On force votre image à prendre toute la largeur */
-  .city-content img {
-    width: 100%; 
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  /* On réduit la taille des titres pour que ça rentre */
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.6em; }
 }
-/* Footer */
+* Footer */
 footer {
  margin-top: 80px;
  padding: 30px 50px;
@@ -164,16 +254,6 @@ footer {
  transition: color 0.3s, transform 0.3s;
 }
 
-
-/* Si vous utilisez du texte (Option 2), utilisez ce style à la place */
-.Liens a
-{
- text-decoration: none;
- color: #333;
- font-size: 1.1em; /* Pour le texte */
- font-weight: 500;
- transition: color 0.3s, transform 0.3s;
-}
 
 
 .Liens a:hover
