@@ -7,7 +7,7 @@ body {
 
 /* Header */
 header {
-  background-color: rgb(250, 250, 250);
+  background-color: #fdfaf5;
   padding: 15px 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
@@ -245,4 +245,62 @@ h6 {
     .search-bar button {
         width: 100%; /* Le bouton prend toute la largeur */
     }
+}
+/* Footer */
+footer {
+ margin-top: 80px;
+ padding: 30px 50px;
+ background-color: #f8f8f8;
+ border-top: 1px solid #ddd;
+}
+
+
+.basDeLaPage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+}
+
+
+.basDeLaPage h6 {
+ margin: 0;
+ padding: 0;
+ font-size: 1.3em;
+ font-weight: 600;
+ color: #333;
+ background-color: transparent;
+}
+
+
+.Liens {
+ display: flex;
+ gap: 25px;
+ align-items: center;
+}
+
+
+.Liens a {
+ text-decoration: none;
+ color: #333;
+ font-size: 1.8em; /* Pour les emojis */
+ transition: color 0.3s, transform 0.3s;
+}
+
+
+/* Si vous utilisez du texte (Option 2), utilisez ce style à la place */
+.Liens a
+{
+ text-decoration: none;
+ color: #333;
+ font-size: 1.1em; /* Pour le texte */
+ font-weight: 500;
+ transition: color 0.3s, transform 0.3s;
+}
+
+
+.Liens a:hover
+{
+ color: #ffe38b;
+ transform: translateY(-3px);
 }
