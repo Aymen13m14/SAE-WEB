@@ -1,95 +1,131 @@
 <!doctype html>
-<html lang="en-fr">
+<html lang="fr">
+
   <head>
+
     <meta charset="utf-8" />
-    <title>Triply : Explorez. Rêvez. Voyagez</title>
-             
+
+      <title>Triply : Explorez. Rêvez. Voyagez</title>
+        <link id="themelink" rel="stylesheet" href="../css/sombre.css">
+        <link rel="stylesheet" href="../css/maroc.css">
+            
   </head>
 
 
+  <body>
 
-
-<body> 
-
-    <!-- Début CSS -->
-
-
-
-
-
-
-
+<!-- C'est la partie de tout en haut-->
+  <header>
     
+    <a href="../index.html">
+      <img src="../image/Logo.png" alt="Logo Triply" class="logo"></a>
+        <a href=”../index.html>Destination</a>
+          <div class="ou-partir">
+            <a>Où partir ?</a>
+          </div>
+          <button id="themeselector" class="light-theme" type="button">Changer de thème</button>
 
 
-     <!-- Fin CSS -->
-
-     <h1> Nos conseils pour un bon séjour !  </h1>
-        <h5> Japon, Espagne, Maroc</h5>
-
-        <h1>Villes du Maroc</h1>
+  </header>
 
 
+<!-- Texte en haut au milieu, entre la barre du haut et la desriptiocn des pays et villes -->
+  <h1> Nos conseils pour un bon séjour !  </h1>
+    <h5> Japon, Espagne, Maroc</h5>
 
-        <h3>Fès</h3>
-<img alt="C'est une photo de la medina de Fes" src="medina_fes.jpg" />
-        <h4>
-        Fès est l’ancienne capital du Maroc. Cette ville est gorgée d’histoire et de paysages à ne pas
-        louper. Je vous ai séléctionné les meilleurs endroits à visiter à Fès :
-
-        La Medina dl Fès, un labyrinthe de ruelles et de souks avec son architecture ancienne. Vous
-        pourrez tester vos méthodes de négociations, mais aussi déguster de bonnes choses.
-
-        Médersa Bou Inania, une école coranique remarquable qui met en avant l’architecture
-        marocaine. Celle-ci est ouverte aussi aux non musulmans, ce qui peut vous permettre d’en appr-
-        rendre d’avantage sur la culture musulmane et marocaine.
-
-        Tannerie Chouara, LE lieu emblématique de Fès. Vous pourrez voir des travailleurs exercer un
-        anciens métiers encore exploité aujourd’hui. Vous observerez  un spectacle visuel coloré mais aussi comprendre une tradition artisanale. </h4>
+    <!-- Texte "Ville du Maroc avec section qui va servir pour le CSS"-->
+  <section class="ville-maroc-txt">
+    <h2>Villes du Maroc</h2>
+  </section>
 
 
+<!--Description de la ville de Fès avec image-->
+
+    <article>
+
+          <h3>Fès</h3>
+
+<!--Creation de la class "Fes-Casablanca-city" pour modifier image et texte en CSS-->
+<section class="Fes-Casablanca-city">
+  <img alt="C'est une photo de la medina de Fes" src="../image/medina_fes.jpg" />
+    <div>
+        <p> Fès est l’ancienne capital du Maroc. Cette ville est gorgée d’histoire et de paysages à ne pas                                           </p>
+        <p> louper. Je vous ai séléctionné les meilleurs endroits à visiter à Fès :                                                                  </p>
+        <p> La Medina de Fès, un labyrinthe de ruelles et de souks avec son architecture ancienne. Vous                                              </p>
+        <p> pourrez tester vos méthodes de négociations, mais aussi déguster de bonnes choses.                                                       </p>
+        <p> Médersa Bou Inania, une école coranique remarquable qui met en avant l’architecture                                                      </p>
+        <p>  marocaine. Celle-ci est ouverte aussi aux non musulmans, ce qui peut vous permettre d’en appr-                                          </p>
+        <p> rendre d’avantage sur la culture musulmane et marocaine.                                                                                 </p>
+        <p> Tannerie Chouara, LE lieu emblématique de Fès. Vous pourrez voir des travailleurs exercer un                                             </p>
+        <p> anciens métiers encore exploité aujourd’hui. Vous observerez  un spectacle visuel coloré mais aussi comprendre une tradition artisanale. </p>
+      </div>
+
+  </section>
+</article>
 
 
-        <h3>Chefchaouen</h3>
-        <img alt="Une photo d'une rue dans Chefchaouen" src="chefchaouen.jpg" />
-        <h4> 
-        Chefchaouen, aussi connu sous le nom de la ville bleu est un incotournable d’un voyage au
-        maroc. Elle se situe dans les montagnes du Rif, ce qui rend cette ville encore plus extraordinaire,
-        surtout de nuit ! Il y a deux lieux que vous ne devez pas rater durant votre séjour :
+<article>
 
-        La Médina bleue, le cœur historique de la ville, avec son mood unique. Vous pourrez y découvrir
-         encore plus de la culture marocaine là base, notamment des Rifiens, une tribu Amazigh.
+          <h3>Chefchaouen</h3>
 
-        Chefchaouen est entourée par les montagnes du Rif ce qui est un énorme point positif pour les
-        amoureux des randonnées. Vous y trouverez des spots avec des lacs, ou même des vues extra-
-        ordinaires au sommet.
-        </h4>
+          <section class="Chefchaouen-city">
+<!--Creation de la class "Chefchaouen-city" pour modifier image et texte en CSS-->
+    <div>
+        <p> Chefchaouen, aussi connu sous le nom de la ville bleu est un incotournable d’un voyage au                                                 </p>
+        <p> Maroc. Elle se situe dans les montagnes du Rif, ce qui rend cette ville encore plus extraordinaire,                                       </p>
+        <p> surtout de nuit ! Il y a deux lieux que vous ne devez pas rater durant votre séjour :                                                     </p>
+        <p> La Médina bleue, le cœur historique de la ville, avec son mood unique. Vous pourrez y découvrir                                           </p>
+        <p> encore plus de la culture marocaine là base, notamment des Rifiens, une tribu Amazigh.                                                    </p>
+        <p> Chefchaouen est entourée par les montagnes du Rif ce qui est un énorme point positif pour les                                             </p>
+        <p> amoureux des randonnées. Vous y trouverez des spots avec des lacs, ou même des vues extra-                                                </p>
+        <p> ordinaires au sommet.                                                                                                                     </p>
+
+      
+      </div>
+      <img alt="Une photo d'une rue dans Chefchaouen" src="../image/chefchaouen.jpg" />
+
+  </section>
+</article>
 
 
 
+<article>
+      
+          <h3>Casablanca</h3>
 
-         <h3>Casablanca</h3>
-         <img alt="Une photo de la mosquée Hassan II" src="hassanII.jpg" />
-         <h4> 
-        Casablanca est la ville  économique du Maroc. Cette ville est connu pour ses quartiers d’affaires,
-        la dar bida, mais aussi ses plages et sa mosquée iconique. 
-        J’ai 3 lieux à vous conseiller à aller checker si vous passez par Casablanca :
+<!--Reutilisation de la class "Fes-Casablanca-city" pour modifier image et texte en CSS-->
+<section class="Fes-Casablanca-city">
+  <img alt="Une photo de la mosquée Hassan II" src="../image/hassanII.jpg" />
+    <div>
+          <p> Casablanca est la ville  économique du Maroc. Cette ville est connu pour ses quartiers d’affaires,                                      </p>
+          <p> la dar bida, mais aussi ses plages et sa mosquée iconique.                                                                              </p>
+          <p> J’ai 3 lieux à vous conseiller à aller checker si vous passez par Casablanca :                                                          </p>
+          <p> Casablanca Finance City, LE quartier d’affaire de Casablanca. Après avoir vu dess villes traditionnels,                                 </p>
+          <p>  on retrouve un spot rempli de gratte-ciel et de modernité.                                                                             </p>
+          <p> La mosquée Hassan II, la deuxième mosquée la plus grande d’Afrique. Ce lieu de culte peut être                                          </p>
+          <p> visiter par tous le monde (en ayant une tenue ample et en étant respectueux bien évidemment).                                           </p>
+          <p>  La mosquée est impressionante que ce soit de l’extérieur mais aussi de l’intérieur avec une archi-                                     </p>
+          <p>  tecture mauresque et son zelige magnifique !                                                                                           </p>
+          <p> La plage Ain Diab qui vous fera profiter de l’eau et des vagues. Mais vous pouvez aussi venir                                           </p>
+          <p> en début de soirée pour profiter de la vie nocture de ce lieu.                                                                          </p>
+    </div>
+    
+  </section>
+</article>
 
-        Casablanca Finance City, LE quartier d’affaire de Casablanca. Après avoir vu dess villes traditionnels,
-        on retrouve un spot rempli de gratte-ciel et de modernité. 
+<!-- Bas de la page-->
+<footer>
+  <div class="basDeLaPage">
+    <h6>Triply</h6>
+    <div class="Liens">
+      <a href="https://www.instagram.com" target="_blank" title="Instagram">📷</a>
+      <a href="https://www.youtube.com" target="_blank" title="YouTube">▶️</a>
+      <a href="https://www.tiktok.com" target="_blank" title="TikTok">🎵</a>
+      <a href="https://www.twitter.com" target="_blank" title="Twitter/X">🐦</a>
+    </div>
+  </div>
 
-        La mosquée Hassan II, la deuxième mosquée la plus grande d’Afrique. Ce lieu de culte peut être
-        visiter par tous le monde (en ayant une tenue ample et en étant respectueux bien évidemment).
-        La mosquée est impressionante que ce soit de l’extérieur mais aussi de l’intérieur avec une archi-
-        tecture mauresque et son zelige magnifique !
-
-        La plage Ain Diab qui vous fera profiter de l’eau et des vagues. Mais vous pouvez aussi venir 
-        en début de soirée pour profiter de la vie nocture de ce lieu.
-         </h4>
-
-          <h6> Triply</h6>
-
+</footer>
 </body>
 
-</html>
 </html>
