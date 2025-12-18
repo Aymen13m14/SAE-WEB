@@ -12,14 +12,14 @@ document.getElementById('themeselector').addEventListener('click', () => {
         themeLink.href = '../css/claire.css'; 
         
       
-        imageLogo.src = '../image/Triply.png';
+       
 
     } else {
         
         themeLink.href = '../css/sombre.css';
         
       
-        imageLogo.src = '../image/Triply_dark.png'; 
+        
     }
 });
 

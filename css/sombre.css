@@ -2,4 +2,19 @@ body
 {
     background-color: rgb(40, 40, 40);
     color: rgb(194, 194, 194);
+
+
+
+/* --- AJOUT POUR LE FOOTER (TRIPLY) --- */
+h6 {
+    /* On change la couleur de fond pour qu'elle aille avec le thème sombre */
+    /* Soit transparent, soit une couleur très sombre */
+    background-color: rgb(25, 25, 25); 
+    
+    /* On s'assure que le texte reste lisible */
+    color: rgb(194, 194, 194);
+    
+    /* Optionnel : Une petite bordure pour séparer du reste */
+    border-top: 1px solid rgb(80, 80, 80);
+}
 }
