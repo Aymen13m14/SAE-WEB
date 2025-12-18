@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+/* Header */
+header 
+{
+  background-color: #fdfaf5;
+  padding: 15px 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Logo */
+.logo 
+{
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1em;
+  transition: color 0.5s;
+}
+
+header a:hover {
+  color: #ffe38f;
+}
+
+/* Bouton de thème */
+#themeselector {
+  margin-left: auto;
+  padding: 8px 18px;
+  background-color: #ffe38b;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+#themeselector:hover {
+  background-color: #ffd96f;
+}
+
+/* "Nos conseil pour un bon séjour" */
+h1 {
+  font-size: 2em;
+  margin: 50px 0px 0px 25px;
+  font-weight: 600;
+}
+
+/* "Japon, Espagne, Maroc" */
+h5 {
+  font-size: 1em;
+  margin: 0px 0px 15px 60px;
+  font-weight: 400;
+}
+
+/* Titre "Villes du Japon" en jaune clair */
+h2 {
+  color: #ffe38b;
+  font-size: 2em;
+  margin: 150px 0px 0px 25px;
+  font-weight: 600;
+}
+
+/* Sections des villes */
+h3 {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 50px 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Container pour image + texte côte à côte pour Fes et Casa (image à gauche, texte à droite)*/
+.Fes-Casablanca-city {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 30px;
+  margin: 0 50px 60px;
+  align-items: start;
+}
+
+/* Images à gauche pour Fes Casa*/
+.Fes-Casablanca-city img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+/* Textes à droite pour Fes Casa*/
+.Fes-Casablanca-city div {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  color: #333;
+}
+
+/* Suppression des marges des paragraphes pour tous les textes */
+.Fes-Casablanca-city p,
+.Chefchaouen-city p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container pour Chefchaouen (texte à gauche, image à droite) */
+.Chefchaouen-city {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 50px;
+  margin: 0 50px 60px;
+  align-items: start;
+}
+
+/* Image à droite pour Chefchaouen */
+.Chefchaouen-city img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+/* Texte à gauche pour Chefchaouen */
+.Chefchaouen-city div {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  padding: 30px 50px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.basDeLaPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.basDeLaPage h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+}
+
+.Liens {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.Liens a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8em; /* Pour les emojis */
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Si vous utilisez du texte (Option 2), utilisez ce style à la place */
+.Liens a
+{
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em; /* Pour le texte */
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Liens a:hover 
+{
+  color: #ffe38b;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .Fes-Casablanca-city,
+  .Chefchaouen-city {
+    grid-template-columns: 1fr;
+  }
+  
+  .Fes-Casablanca-city img,
+  .Chefchaouen-city img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #themeselector {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+  
+  h5 {
+    padding: 0 20px;
+  }
+  
+  h2 {
+    margin: 0 20px 30px;
+    font-size: 1.7em;
+  }
+  
+  h3 {
+    margin: 0 20px 20px;
+    font-size: 1.3em;
+  }
+  
+  .Fes-Casablanca-city,
+  .Chefchaouen-city {
+    margin: 0 20px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  header a {
+    font-size: 0.85em;
+  }
+}
