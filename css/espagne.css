@@ -6,7 +6,7 @@ body {
 
 /* Header */
 header {
-  background-color: #fff;
+  background-color: #fdfaf5;
   padding: 15px 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   display: flex;
@@ -62,4 +62,102 @@ h6 {
   font-size: 1.1em;
   margin-top: 80px;
   font-weight: 400;
+}
+
+/* --- AJOUT A LA FIN DU FICHIER --- */
+
+@media screen and (max-width: 768px) {
+    /* On dit au tableau de ne plus se comporter comme un tableau */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    /* On centre tout */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { margin-bottom: 30px; }
+
+    /* On met les cellules (images et textes) les unes sous les autres */
+    td { 
+        /* On force la largeur à 100% */
+        width: 100% !important; 
+        box-sizing: border-box;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* On s'assure que les images du tableau prennent toute la place */
+    td img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Ajustement du header sur mobile */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+}
+/* Footer */
+footer {
+ margin-top: 80px;
+ padding: 30px 50px;
+ background-color: #f8f8f8;
+ border-top: 1px solid #ddd;
+}
+
+
+.basDeLaPage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+}
+
+
+.basDeLaPage h6 {
+ margin: 0;
+ padding: 0;
+ font-size: 1.3em;
+ font-weight: 600;
+ color: #333;
+ background-color: transparent;
+}
+
+
+.Liens {
+ display: flex;
+ gap: 25px;
+ align-items: center;
+}
+
+
+.Liens a {
+ text-decoration: none;
+ color: #333;
+ font-size: 1.8em; /* Pour les emojis */
+ transition: color 0.3s, transform 0.3s;
+}
+
+
+/* Si vous utilisez du texte (Option 2), utilisez ce style à la place */
+.Liens a
+{
+ text-decoration: none;
+ color: #333;
+ font-size: 1.1em; /* Pour le texte */
+ font-weight: 500;
+ transition: color 0.3s, transform 0.3s;
+}
+
+
+.Liens a:hover
+{
+ color: #ffe38b;
+ transform: translateY(-3px);
 }
