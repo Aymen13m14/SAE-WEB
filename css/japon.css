@@ -230,16 +230,6 @@ footer {
 }
 
 
-.basDeLaPage h6 {
- margin: 0;
- padding: 0;
- font-size: 1.3em;
- font-weight: 600;
- color: #333;
- background-color: transparent;
-}
-
-
 .Liens {
  display: flex;
  gap: 25px;
@@ -260,4 +250,16 @@ footer {
 {
  color: #ffe38b;
  transform: translateY(-3px);
+}
+/* --- AJOUT POUR LE FOOTER (TRIPLY) --- */
+h6 {
+    /* On change la couleur de fond pour qu'elle aille avec le thème sombre */
+    /* Soit transparent, soit une couleur très sombre */
+    background-color: rgb(25, 25, 25); 
+    
+    /* On s'assure que le texte reste lisible */
+    color: rgb(194, 194, 194);
+    
+    /* Optionnel : Une petite bordure pour séparer du reste */
+    border-top: 1px solid rgb(80, 80, 80);
 }
