@@ -209,42 +209,76 @@ h6 {
 .search-bar button:hover {
     background-color: #ffa726;
 }
-/* --- VERSION MOBILE --- */
-@media (max-width: 768x) {
-    
-    .hero {
-        /* 1. On réduit la hauteur (passe de 60% à 40% ou 50% de l'écran) */
-        height: 50vh; 
-        
-        /* 2. Optionnel : Si l'image est mal centrée, changez 'center' par 'center top' */
-        background-position: center; 
-    }
+/* Responsive */
+@media (max-width: 1024px) {
+  .Fes-Casablanca-city,
+  .Chefchaouen-city {
+    grid-template-columns: 1fr;
+  }
+  
+  .Fes-Casablanca-city img,
+  .Chefchaouen-city img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 
-    /* On réduit aussi la taille du gros titre pour qu'il ne mange pas toute l'image */
-    .hero-content h1 {
-        font-size: 2rem; /* Plus petit que les 3rem de l'ordi */
-    }
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #themeselector {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+  
+  h5 {
+    padding: 0 20px;
+  }
+  
+  h2 {
+    margin: 0 20px 30px;
+    font-size: 1.7em;
+  }
+  
+  h3 {
+    margin: 0 20px 20px;
+    font-size: 1.3em;
+  }
+  
+  .Fes-Casablanca-city,
+  .Chefchaouen-city {
+    margin: 0 20px 40px;
+  }
+}
 
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    /* Ajustement de la barre de recherche sur mobile pour qu'elle ne dépasse pas */
-    .search-bar {
-        width: 90%; /* Prend presque toute la largeur disponible */
-        flex-direction: column; /* Met le bouton sous le texte si l'écran est trop petit */
-        padding: 5px;
-    }
-
-    .search-bar input {
-        width: 100%; /* L'input prend toute la largeur */
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .search-bar button {
-        width: 100%; /* Le bouton prend toute la largeur */
-    }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  header a {
+    font-size: 0.85em;
+  }
 }
 /* Footer */
 footer {
