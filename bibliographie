@@ -17,3 +17,92 @@ Image de l'accueil : https://carnet.leparisien.fr/actualites/vie-de-famille/prep
 Tokyo : https://fr.japanspecialist.com/w/tokyo-en-une-journee-1
 Osaka : https://www.advantour.com/japan/osaka.htm
 Okinawa : https://hoteletlodge.fr/destinations/decouverte/okinawa-le-japon-tropical/
+
+Prompt ia: Création du Header/Hero :
+
+    "à partir de monde code html ainsi que du css, code moi ce qu'il me manque dans cette image (la grande image en fond ainsi que les boutons 'où souhaitez vous partir ?'et les textes en fond )"
+
+Fonctionnalité de recherche :
+
+    "Et comment faire en sorte que la barre de recherche me redirige sur mes autres pages ?"
+
+Modification de l'image :
+
+    "comment je peux changer l'image de fond ?"
+
+Recherche d'image :
+
+    "retrouve moi sur google l'image de fond"
+
+Problème de thème sombre (Footer) :
+
+    "à partir de tout ça comment je peux faire en sorte que quand je mets le thème sombre le 'triply' en dessous de la page soit pris en compte également ?"
+
+Débogage (Footer) :
+
+    "ça marche pas"
+
+Animation CSS :
+
+    "comment je peux faire en sorte d'avoir une animation quand le curseur passe sur une image"
+
+Responsive Design (Mobile) :
+
+    "Sur la version mobile l'image de fond est un peu trop grande, gère moi le problème"
+
+Débogage (Mobile) :
+
+    "ça n'a rien changer"
+
+Correction de code JS (Copier-coller) :
+
+    [Vous avez collé un bloc de code JavaScript commençant par 'ocument.getElementById...']
+
+Thème sombre (Header) :
+
+    "fait moi en sorte que la barre tout en haut passe aussi en thème sombre/claire"
+
+Question sur le JS :
+
+    "et je mets rien dans le js ?"
+
+Débogage (Header) :
+
+    "je parle pour le header parce que ça n'a rien changer"
+"explique moi le problème de mon code <!DOCTYPE html>..."
+
+"fait moi un programme beaucoup moins compliqué et qui ressemble au programme initial"
+
+"maintenant depuis le code initial récupere moi les lignes de textes qui étaient dans les balises pre et redonne les moi de façon espacé"
+
+"peux tu faire en sorte de me refaire cette image mais pour un thème sombre ?"
+
+"et comment je peux faire en sorte que quand le thème sombre est activer que ce soit cette image qui apparait et pas l'autre"
+
+"ça marche pas"
+
+"[Fichiers fournis] voila maintenant je pense que tu peux mieux voir où est le problème"
+
+"refait moi l'image sombre en 39 39 39"
+
+"fait en sorte que je puisse l'utiliser (quand je clique sur le logo ça me redirige sur l'index)"
+
+"et code moi cette image pour la transformer en texte utilisable et non une image"
+
+"code moi cette page en html/css"
+
+"[Code fourni] refait moi un code à partir de ça"
+
+"et comment je peux lier le css avec le html ?"
+
+"j'ai un problème avec l'espacement des images"
+
+"j'ai mis 200px de gap et ça a rien changer"
+
+"l'image est rouge mais malgré le .cards-grid plus robuste ça n'a rien changé"
+
+"ça change pas"
+
+"[Fichiers fournis] regarde et dit moi où est le problème"
+
+"liste toi tous les prompts de ce site (en utilisant également les autres discussions)"
