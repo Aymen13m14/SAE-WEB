@@ -44,3 +44,22 @@ header a:hover {
     background-color: #ffe38b !important;
     color: #333 !important;
 }
+/* --- FORCER LE TEXTE EN BLANC (Maroc & autres pages) --- */
+
+/* On cible tes conteneurs spécifiques (Fès, Casablanca, Chefchaouen) */
+.Fes-Casablanca-city div,
+.Chefchaouen-city div,
+.Fes-Casablanca-city p,
+.Chefchaouen-city p {
+    color: rgb(220, 220, 220) !important;
+}
+
+/* On force aussi les titres s'ils restent noirs */
+h1, h3, h4, h5 {
+    color: white !important;
+}
+
+/* On force les liens du menu s'ils ne sont pas pris en compte */
+header a {
+    color: rgb(220, 220, 220) !important;
+}
